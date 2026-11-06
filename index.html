@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#101b3d">
+<title>Đấu trường tri thức | Lịch sử Tây Ninh</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#101b3d;--navy2:#182958;--gold:#f4c65e;--cream:#fffaf0;--red:#bd3037;--ink:#18213a;--muted:#69738a;--line:#e7eaf1;--green:#16865b}
+*{box-sizing:border-box}body{margin:0;background:#f2f4f9;color:var(--ink);font-family:'Be Vietnam Pro',sans-serif;min-height:100vh}
+button,input,select,textarea{font:inherit}button{cursor:pointer;border:0}
+.topbar{background:linear-gradient(110deg,#0d1735,#1d3267);color:white;padding:16px max(5vw,20px);display:flex;align-items:center;justify-content:space-between;gap:14px;box-shadow:0 5px 25px #101b3d25}
+.brand{display:flex;align-items:center;gap:12px}.crest{width:44px;height:44px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:22px}.brand b{display:block;letter-spacing:1.5px;font-size:13px;color:var(--gold)}.brand span{font-size:11px;opacity:.8}
+.top-actions{display:flex;gap:8px;flex-wrap:wrap}.ghost{background:#ffffff18;color:white;border:1px solid #ffffff55;padding:9px 13px;border-radius:10px}
+.hero{background:radial-gradient(circle at 80% 15%,#3b4e85 0,transparent 30%),linear-gradient(130deg,#101b3d,#1c326a);color:white;padding:55px 20px 72px;text-align:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:420px;height:420px;border:1px solid #ffffff15;border-radius:50%;left:-180px;bottom:-300px}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:3px;font-size:12px}.hero h1{font-family:'Playfair Display',serif;font-size:clamp(35px,6vw,66px);margin:13px 0 10px;line-height:1.1}.hero h1 em{font-style:normal;color:var(--gold)}.hero p{max-width:680px;margin:0 auto;color:#dce3f5;line-height:1.8}
+.wrap{max-width:1120px;margin:-32px auto 60px;padding:0 18px;position:relative}.panel{background:white;border-radius:22px;padding:clamp(20px,4vw,38px);box-shadow:0 15px 45px #14234a12;margin-bottom:20px}.panel h2{margin:0 0 8px;font-size:22px}.muted{color:var(--muted);font-size:14px;line-height:1.7}.role-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.role{padding:22px;border:1px solid var(--line);border-radius:17px;text-align:left;background:#fff;transition:.2s}.role:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 10px 25px #1b2b5012}.role .ico{font-size:27px}.role h3{margin:12px 0 5px}.role p{font-size:13px;color:var(--muted);line-height:1.6;min-height:42px}.btn{background:var(--red);color:white;padding:12px 18px;border-radius:11px;font-weight:700}.btn.gold{background:var(--gold);color:#392b0d}.btn.navy{background:var(--navy);color:white}.btn.light{background:#eef1f8;color:var(--navy)}.btn:disabled{opacity:.45;cursor:not-allowed}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.field{display:grid;gap:7px;margin:13px 0}.field label{font-size:13px;font-weight:700}.field input,.field select,.field textarea{width:100%;padding:12px 13px;border:1px solid #dce1eb;border-radius:10px;background:white;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#6178bd;box-shadow:0 0 0 3px #6178bd18}.hidden{display:none!important}.loginbox{max-width:470px;margin:0 auto}.tag{display:inline-block;padding:6px 10px;background:#fff4d8;color:#815b0a;border-radius:20px;font-size:11px;font-weight:800;letter-spacing:.5px}
+.dashboard{display:grid;grid-template-columns:240px 1fr;gap:18px}.sidebar{background:var(--navy);color:white;border-radius:18px;padding:20px;height:max-content}.sidebar h3{color:var(--gold);margin-top:0}.sidebtn{display:block;width:100%;text-align:left;background:transparent;color:#e6ebf8;padding:11px;border-radius:9px;margin:4px 0}.sidebtn.active,.sidebtn:hover{background:#ffffff19;color:var(--gold)}.content{min-width:0}.statrow{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:15px 0}.stat{background:#f5f7fb;border-radius:14px;padding:16px}.stat strong{font-size:25px;display:block;color:var(--navy)}.stat small{color:var(--muted)}
+.question-card{background:linear-gradient(140deg,#101b3d,#223a75);color:white;border-radius:20px;padding:clamp(20px,4vw,36px);position:relative;overflow:hidden}.qtop{display:flex;justify-content:space-between;gap:12px;align-items:center;color:var(--gold);font-size:12px;font-weight:800;letter-spacing:1px}.qtext{font-size:clamp(20px,3vw,29px);line-height:1.5;font-weight:700;margin:28px 0}.answers{display:grid;grid-template-columns:1fr 1fr;gap:12px}.answer{padding:15px;border-radius:12px;background:#ffffff13;border:1px solid #ffffff35;color:white;text-align:left;display:flex;gap:12px;align-items:center;line-height:1.5}.answer:hover,.answer.selected{background:#f4c65e;color:#18213a;border-color:var(--gold)}.letter{width:29px;height:29px;display:grid;place-items:center;background:#ffffff22;border-radius:8px;font-weight:800;flex-shrink:0}.answer.selected .letter{background:#18213a;color:white}.progress{height:7px;background:#ffffff25;border-radius:20px;overflow:hidden;margin-top:25px}.progress span{height:100%;display:block;background:var(--gold);transition:.3s}.feedback{margin-top:15px;padding:13px;border-radius:11px;background:#ffffff18;line-height:1.6}.table{width:100%;border-collapse:collapse;margin-top:12px;font-size:14px}.table th,.table td{padding:12px 10px;text-align:left;border-bottom:1px solid var(--line)}.table th{color:var(--muted);font-size:12px}.rounds{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:15px 0}.round{padding:14px;border-radius:13px;background:#f3f5fa;border:1px solid var(--line)}.round b{display:block}.round small{color:var(--muted)}.notice{padding:13px 15px;border-radius:12px;background:#fff6df;color:#73551a;font-size:13px;line-height:1.65;margin:15px 0}.success{background:#e8f7f0;color:#126344}.danger{background:#fff0f0;color:#a12d35}.section{display:none}.section.active{display:block}.qeditor{border:1px solid var(--line);border-radius:13px;padding:15px;margin:12px 0}.qeditor textarea{min-height:65px}.small{font-size:12px}.footer{text-align:center;color:#8b93a6;font-size:12px;padding:25px}
+@media(max-width:760px){.role-grid{grid-template-columns:1fr}.dashboard{grid-template-columns:1fr}.sidebar{display:flex;overflow:auto;gap:6px;padding:10px}.sidebar h3{display:none}.sidebtn{white-space:nowrap;width:auto}.statrow{grid-template-columns:1fr 1fr}.answers{grid-template-columns:1fr}.rounds{grid-template-columns:1fr 1fr}.topbar{align-items:flex-start}.brand span{display:none}}
+</style>
+</head>
+<body>
+<header class="topbar">
+ <div class="brand"><div class="crest">✦</div><div><b>ĐẤU TRƯỜNG TRI THỨC</b><span>LỊCH SỬ TÂY NINH</span></div></div>
+ <div class="top-actions"><button class="ghost" onclick="showHome()">Trang chủ</button><button class="ghost" onclick="showLogin('admin')">Quản trị</button></div>
+</header>
+<section class="hero" id="hero">
+ <div class="eyebrow">KHÁM PHÁ • KẾT NỐI • CHINH PHỤC</div>
+ <h1>ĐẤU TRƯỜNG <em>TRI THỨC</em></h1>
+ <p>Hành trình tìm hiểu lịch sử và truyền thống quê hương Tây Ninh. Bốn vòng thi – bốn mươi câu hỏi – nơi kiến thức tỏa sáng.</p>
+</section>
+<main class="wrap">
+ <section class="panel" id="home">
+  <span class="tag">GAMESHOW KIẾN THỨC</span><h2 style="margin-top:14px">Chào mừng bạn đến với đấu trường!</h2>
+  <p class="muted">Chọn vai trò để tiếp tục. Thí sinh tham gia bằng tên hiển thị; MC điều khiển tiến trình; Admin quản lý bộ câu hỏi và cấu hình trò chơi.</p>
+  <div class="role-grid">
+   <button class="role" onclick="showLogin('player')"><div class="ico">🎓</div><h3>Thí sinh</h3><p>Đăng nhập, trả lời câu hỏi và theo dõi điểm số của mình.</p><span class="tag">VÀO THI →</span></button>
+   <button class="role" onclick="showLogin('mc')"><div class="ico">🎤</div><h3>Người dẫn chương trình</h3><p>Điều khiển vòng thi, chuyển câu hỏi và công bố đáp án.</p><span class="tag">ĐIỀU KHIỂN →</span></button>
+   <button class="role" onclick="showLogin('admin')"><div class="ico">⚙️</div><h3>Quản trị viên</h3><p>Quản lý câu hỏi, đáp án và thiết lập trò chơi.</p><span class="tag">QUẢN TRỊ →</span></button>
+  </div>
+  <div class="notice">Lưu ý: Đây là bản chạy tĩnh dành cho GitHub Pages. Dữ liệu được lưu trên trình duyệt hiện tại; đăng nhập phân vai chỉ phục vụ bản demo, chưa phải xác thực bảo mật hoặc đồng bộ nhiều thiết bị.</div>
+ </section>
+
+ <section class="panel hidden" id="login">
+  <div class="loginbox"><button class="btn light" onclick="showHome()">← Quay lại</button><h2 id="loginTitle" style="margin-top:20px">Đăng nhập</h2><p class="muted" id="loginDesc"></p>
+   <div id="playerFields"><div class="field"><label>Họ và tên thí sinh</label><input id="playerName" placeholder="Ví dụ: Nguyễn Minh Anh" maxlength="40"></div><div class="field"><label>Lớp / Đội thi</label><input id="playerTeam" placeholder="Ví dụ: 12A2" maxlength="30"></div></div>
+   <div id="passwordField" class="field hidden"><label>Mật khẩu demo</label><input id="rolePassword" type="password" placeholder="Nhập mật khẩu"></div>
+   <div class="notice" id="loginHint">Thí sinh không cần mật khẩu.</div><button class="btn" onclick="login()">Tiếp tục</button><p class="muted small" id="loginError"></p>
+  </div>
+ </section>
+
+ <section class="panel hidden" id="player">
+  <div style="display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap"><div><span class="tag">KHU VỰC THÍ SINH</span><h2 id="welcomePlayer">Xin chào!</h2><p class="muted">Hãy đọc kỹ câu hỏi và chọn một đáp án.</p></div><button class="btn light" onclick="logout()">Đăng xuất</button></div>
+  <div class="statrow"><div class="stat"><strong id="playerScore">0</strong><small>Điểm hiện tại</small></div><div class="stat"><strong id="playerRank">—</strong><small>Thứ hạng</small></div><div class="stat"><strong id="playerAnswered">0/40</strong><small>Câu đã trả lời</small></div></div>
+  <div id="playerQuestion" class="question-card"><div class="qtop"><span>CHƯA BẮT ĐẦU</span><span>ĐANG CHỜ MC</span></div><div class="qtext">Vui lòng chờ người dẫn chương trình bắt đầu vòng thi.</div></div>
+  <div id="playerMessage" class="notice">Khi câu hỏi xuất hiện, chọn một phương án để ghi nhận câu trả lời.</div>
+  <h3>Bảng xếp hạng</h3><div id="playerLeaderboard"></div>
+ </section>
+
+ <section class="panel hidden" id="mc">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div><span class="tag">BÀN ĐIỀU KHIỂN MC</span><h2>Điều hành chương trình</h2><p class="muted">Bắt đầu vòng, mở câu hỏi, công bố đáp án và chuyển câu.</p></div><button class="btn light" onclick="logout()">Đăng xuất</button></div>
+  <div class="rounds" id="mcRounds"></div>
+  <div class="question-card" id="mcQuestion"><div class="qtop"><span>SẴN SÀNG</span><span>40 CÂU HỎI</span></div><div class="qtext">Chọn vòng thi để bắt đầu.</div></div>
+  <div class="actions"><button class="btn gold" onclick="startRound()">Bắt đầu / mở câu hỏi</button><button class="btn" onclick="revealAnswer()">Công bố đáp án</button><button class="btn navy" onclick="nextQuestion()">Câu tiếp theo →</button><button class="btn light" onclick="resetGame()">Đặt lại trò chơi</button></div>
+  <div class="notice">Điểm được cộng tự động khi MC công bố đáp án. Mỗi câu đúng được 10 điểm. Mỗi thí sinh chỉ được ghi nhận một câu trả lời cho mỗi câu.</div>
+  <h3>Thí sinh & bảng điểm</h3><div id="mcLeaderboard"></div>
+ </section>
+
+ <section class="panel hidden" id="admin">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap"><div><span class="tag">QUẢN TRỊ HỆ THỐNG</span><h2>Quản lý gameshow</h2><p class="muted">Chỉnh sửa nội dung 40 câu hỏi và đáp án.</p></div><button class="btn light" onclick="logout()">Đăng xuất</button></div>
+  <div class="notice danger">Mật khẩu demo mặc định: <b>admin123</b> (Admin) và <b>mc123</b> (MC). Hãy đổi trong tệp <code>app.js</code> trước khi triển khai; vì đây là website tĩnh nên mật khẩu phía trình duyệt không thể bảo vệ dữ liệu nhạy cảm.</div>
+  <div class="actions"><button class="btn navy" onclick="exportQuestions()">Xuất bộ câu hỏi JSON</button><label class="btn light" for="importFile">Nhập JSON</label><input id="importFile" type="file" accept=".json,application/json" class="hidden" onchange="importQuestions(event)"></div>
+  <div class="field"><label>Chọn vòng thi để chỉnh sửa</label><select id="adminRound" onchange="renderEditor()"><option value="0">Vòng 1 – Khởi động</option><option value="1">Vòng 2 – Khám phá</option><option value="2">Vòng 3 – Tăng tốc</option><option value="3">Vòng 4 – Về đích</option></select></div>
+  <div id="questionEditor"></div><button class="btn" onclick="saveEditor()">Lưu thay đổi câu hỏi</button>
+ </section>
+</main>
+<footer class="footer">ĐẤU TRƯỜNG TRI THỨC • TÌM HIỂU LỊCH SỬ TÂY NINH</footer>
+<script src="app.js"></script>
+</body></html>
